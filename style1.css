@@ -1,0 +1,70 @@
+html, body {
+  margin: 0;
+  padding: 10;
+  background: url("https://i.pinimg.com/564x/e1/2c/4b/e12c4b04d0b7947530c48423370cc9a2.jpg");
+  
+}
+canvas {
+  display: block;
+  margin: 1% auto;
+  border:5px solid deeppink;
+  position:absolute;top:100px;left:100px
+  
+}
+
+.textbox4 {
+  border-width:2px;
+border-style:solid;
+  border-color: pink;
+  border-radius: 10px 10px 10px 10px;
+height: 400px;
+    width: 200px;
+    padding-left: 3px;
+  padding-right:3px;
+  padding-bottom: 3px;
+  align:center;
+  font-family: 'Poppins', sans-serif;
+  color: #99007F;
+    font-size: 40px;
+    background-color: #FFB3CC;
+position:absolute; left:1000px; top:150px;
+}
+.fashion{
+  width:180px;
+  height:180px;
+  position:absolute; left:1000px;top:570px;
+}
+
+
+.gallery {
+    position:absolute; left:0px; top:700px; 
+     overflow:hidden; 
+     white-space: nowrap;
+     animation: bannermove 15s linear infinite;
+    animation-play-state: running;
+    -webkit-animation-play-state: running;
+    animation-direction: alternate-reverse;
+   }
+   .gallery img {    
+   object-fit: contain;
+     object-position: 10% 20%;
+   padding: 5px;
+   }
+   @keyframes bannermove {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-50%, 0);
+    }
+  }
+  
+   .gallery:hover {
+    -webkit-animation-play-state:paused;
+    -moz-animation-play-state:paused;
+    -o-animation-play-state:paused;
+    animation-play-state:paused;
+  }
+
+  
+
